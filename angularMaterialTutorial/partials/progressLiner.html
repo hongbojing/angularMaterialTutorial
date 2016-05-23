@@ -1,0 +1,33 @@
+<md-bottom-sheet class="md-grid" layout="column" ng-cloak>
+
+	<div id="progressbarsContainer" ng-controller="progressLinerController as ctrl" layout="column" ng-cloak>
+		<h4 style="margin-top:10px">Determinate </h4>
+		<div layout="row" layout-sm="column" layout-align="space-around">
+			<md-progress-linear md-mode="determinate" value="{{ctrl.determinateValue}}"></md-progress-linear>
+		</div>
+
+		<h4 style="margin-top:10px">Indeterminate </h4>
+		<div layout="row" layout-sm="column" layout-align="space-around">
+			<md-progress-linear md-mode="indeterminate"></md-progress-linear>
+		</div>
+
+		<h4 style="margin-top:10px">Buffer</h4>
+		<div layout="row" layout-sm="column" layout-align="space-around">
+			<md-progress-linear class="md-warn" md-mode="{{ctrl.modes[0]}}" value="{{ctrl.determinateValue}}"
+								md-buffer-value="{{ctrl.determinateValue2}}" ></md-progress-linear>
+		</div>
+
+		<div id="loaders" layout="row" layout-align="start center">
+			<p>Progress Buffer Indicators: </p>
+			<h5>Off</h5>
+			<md-switch
+					ng-model="ctrl.activated"
+					ng-change="ctrl.toggleActivation()"
+					aria-label="Toggle Buffer Progress Indicators">
+				<h5>On</h5>
+			</md-switch>
+		</div>
+
+	</div>
+
+</md-bottom-sheet>

@@ -1,0 +1,53 @@
+<style>
+	.swipeContainer .demo-swipe {
+		padding: 20px 10px;
+	}
+	.swipeContainer .no-select {
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+</style>
+<md-bottom-sheet class="md-grid" layout="column" ng-cloak>
+
+	<md-card>
+		<div id="swipeContainer" ng-controller="swipeController as ctrl" layout="row" ng-cloak>
+			<div flex>
+
+				<div class="demo-swipe" md-swipe-left="onSwipeLeft()">
+					<span class="no-select">Swipe me to the left</span>
+					<md-icon md-font-icon="android" aria-label="android"></md-icon>
+				</div>
+
+				<md-divider></md-divider>
+
+				<div class="demo-swipe" md-swipe-right="onSwipeRight()">
+					<span class="no-select">Swipe me to the right</span>
+				</div>
+
+			</div>
+
+			<md-divider></md-divider>
+
+			<div flex layout="row">
+
+				<div flex layout="row" layout-align="center center"
+					 class="demo-swipe" md-swipe-up="onSwipeUp()">
+					<span class="no-select">Swipe me up</span>
+				</div>
+
+				<md-divider></md-divider>
+
+				<div flex layout="row" layout-align="center center"
+					 class="demo-swipe" md-swipe-down="onSwipeDown()">
+					<span class="no-select">Swipe me down</span>
+				</div>
+
+			</div>
+		</div>
+	</md-card>
+
+</md-bottom-sheet>

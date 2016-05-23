@@ -1,0 +1,48 @@
+<md-bottom-sheet class="md-grid" layout="column" ng-cloak>
+	<div id="menuContainer" ng-controller="menuController as ctrl" layout="row" ng-cloak>
+		<div layout="column" flex flex-xs="100" flex-sm="100" layout-align="center center">
+
+			<p>Default Menu</p>
+
+			<md-menu>
+				<md-button aria-label="Sample Menu" class="md-icon-button" ng-click="$mdOpenMenu($event)">
+					<md-icon md-menu-origin class="material-icons">more_vert</md-icon>
+				</md-button>
+
+				<md-menu-content width="6">
+					<md-menu-item ng-repeat="item in [1, 2, 3]">
+						<md-button ng-click="ctrl.menuItemClick($index)">
+							<div layout="row">
+								<md-icon md-menu-align-target class="material-icons">add</md-icon>
+								<p flex>Option {{item}}</p>
+							</div>
+						</md-button>
+					</md-menu-item>
+				</md-menu-content>
+			</md-menu>
+		</div>
+
+		<div layout="column" flex-sm="100" flex-xs="100" flex layout-align="center center">
+
+			<p>Left Aligned Menu</p>
+
+			<md-menu md-position-mode="target-right target" >
+
+				<md-button aria-label="Sample Menu" class="md-icon-button" ng-click="$mdOpenMenu($event)">
+					<md-icon md-menu-origin class="material-icons">more_vert</md-icon>
+				</md-button>
+
+				<md-menu-content width="4" >
+					<md-menu-item ng-repeat="item in [1, 2, 3]">
+						<md-button ng-click="ctrl.menuItemClick($index)">
+							<div layout="row">
+								<p flex>Option {{item}}</p>
+								<md-icon md-menu-align-target class="material-icons">add</md-icon>
+							</div>
+						</md-button>
+					</md-menu-item>
+				</md-menu-content>
+			</md-menu>
+		</div>
+	</div>
+</md-bottom-sheet>

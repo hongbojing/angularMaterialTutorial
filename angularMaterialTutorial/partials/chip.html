@@ -1,0 +1,23 @@
+<md-bottom-sheet class="md-grid" layout="column" ng-cloak>
+
+	<div ng-controller="chipController as ctrl" layout="column" ng-cloak>
+
+		<md-chips ng-model="ctrl.fruitNames" readonly="ctrl.readonly"></md-chips>
+
+		<md-chips class="custom-chips" ng-model="ctrl.vegObjs" readonly="ctrl.readonly" md-transform-chip="ctrl.newVeg($chip)">
+			<md-chip-template>
+        <span>
+          <strong>[{{$index}}] {{$chip.name}}</strong>
+          <em>({{$chip.type}})</em>
+        </span>
+			</md-chip-template>
+			<button md-chip-remove class="md-primary closeButton">
+				<md-icon md-svg-icon="md-close"></md-icon>
+			</button>
+		</md-chips>
+		<br/>
+		<md-checkbox ng-model="ctrl.readonly">Readonly</md-checkbox>
+	</div>
+
+</md-bottom-sheet>
+

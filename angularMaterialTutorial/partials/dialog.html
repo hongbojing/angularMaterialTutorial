@@ -1,0 +1,28 @@
+<md-bottom-sheet class="md-grid" layout="column" ng-cloak>
+	<div id="dialogContainer" ng-controller="dialogController as ctrl" layout="row" ng-cloak>
+		<md-content>
+			<h4>Standard Alert</h4>
+			<md-button class="md-primary md-raised" ng-click="showAlert($event)" flex="100"  flex-gt-md="auto">
+				Alert
+			</md-button>
+
+			<h4>Confirm Dialog Box</h4>
+			<md-button class="md-primary md-raised" ng-click="showConfirm($event)"  flex="100"  flex-gt-md="auto">
+				Confirm
+			</md-button>
+
+			<h4>Custom Dialog Box</h4>
+			<md-button class="md-primary md-raised" ng-click="showCustom($event)"  flex="100"  flex-gt-md="auto">
+				Custom
+			</md-button>
+
+
+			<div ng-if="status">
+				<br/>
+				<b layout="row" layout-align="center center" class="md-padding">
+					{{status}}
+				</b>
+			</div>
+		</md-content>
+	</div>
+</md-bottom-sheet>

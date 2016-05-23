@@ -1,0 +1,63 @@
+<md-bottom-sheet class="md-grid" layout="column" ng-cloak>
+	<div class="datepickerdemo" ng-controller="datePickerController as ctrl" layout="column" ng-cloak>
+		<md-content>
+			<h4>Standard Date Picker</h4>
+			<md-datepicker
+					ng-model="myDate"
+					md-placeholder="Enter date">
+			</md-datepicker>
+
+
+			<h4>Disabled Date Picker</h4>
+			<md-datepicker
+					ng-model="myDate"
+					md-placeholder="Enter date"
+					disabled>
+			</md-datepicker>
+
+
+			<h4>Date-picker with min and max dates</h4>
+			<md-datepicker
+					ng-model="myDate"
+					md-placeholder="Enter date"
+					md-min-date="minDate"
+					md-max-date="maxDate">
+			</md-datepicker>
+
+			<h4>Date-picker with only selectable weekends</h4>
+			<md-datepicker
+					ng-model="myDate"
+					md-placeholder="Enter date"
+					md-date-filter="onlyWeekendsPredicate">
+			</md-datepicker>
+
+			<h4>Date-picker with only selectable weekends in a range</h4>
+			<md-datepicker
+					ng-model="myDate"
+					md-placeholder="Enter date"
+					md-min-date="minDate"
+					md-max-date="maxDate"
+					md-date-filter="onlyWeekendsPredicate">
+			</md-datepicker>
+
+			<h4>Date-picker with validation mesages</h4>
+			<form name="myForm">
+				<md-datepicker
+						name="dateField"
+						ng-model="myDate"
+						md-placeholder="Enter date"
+						required
+						md-min-date="minDate"
+						md-max-date="maxDate"
+						md-date-filter="onlyWeekendsPredicate"></md-datepicker>
+				<div class="validation-messages" ng-messages="myForm.dateField.$error">
+					<div ng-message="valid">The entered value is not a date!</div>
+					<div ng-message="required">This date is required!</div>
+					<div ng-message="mindate">Date is too early!</div>
+					<div ng-message="maxdate">Date is too late!</div>
+					<div ng-message="filtered">Only weekends are allowed!</div>
+				</div>
+			</form>
+		</md-content>
+	</div>
+</md-bottom-sheet>

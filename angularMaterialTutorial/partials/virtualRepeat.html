@@ -1,0 +1,26 @@
+<md-bottom-sheet class="md-grid" layout="column" ng-cloak>
+
+	<div class="vrepeatContainer" ng-controller="virtualRepeatController as ctrl" ng-cloak>
+
+		<md-content layout="column">
+
+			<h2>Horizontal Repeat</h2>
+			<md-virtual-repeat-container id="horizontal-container" md-orient-horizontal>
+				<div md-virtual-repeat="item in items"
+					 class="repeated-item-horizontal" flex>
+					{{item}}
+				</div>
+			</md-virtual-repeat-container>
+
+			<h2>Vertical Repeat</h2>
+			<md-virtual-repeat-container id="vertical-container">
+				<div md-virtual-repeat="item in items"
+					 class="repeated-item-vertical" flex>
+					{{item}}
+				</div>
+			</md-virtual-repeat-container>
+
+		</md-content>
+
+	</div>
+</md-bottom-sheet>

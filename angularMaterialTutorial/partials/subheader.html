@@ -1,0 +1,46 @@
+<md-bottom-sheet class="md-grid" layout="column" ng-cloak>
+	<div id="subheaderContainer" ng-controller="subheaderController as ctrl" layout="column" flex layout-fill ng-cloak>
+
+		<md-toolbar md-scroll-shrink>
+			<div class="md-toolbar-tools">Items</div>
+		</md-toolbar>
+
+		<md-content style="height: 600px;">
+
+			<section>
+				<md-subheader class="md-primary">Fruits</md-subheader>
+				<md-list layout-padding>
+					<md-list-item ng-repeat="fruits in fruitNames">
+						<div>
+							<p>{{fruits}}</p>
+						</div>
+					</md-list-item>
+				</md-list>
+			</section>
+
+			<section>
+				<md-subheader class="md-warn">Vegetables</md-subheader>
+				<md-list layout-padding>
+					<md-list-item ng-repeat="veg in vegNames">
+						<div>
+							<p>{{veg}}</p>
+						</div>
+					</md-list-item>
+				</md-list>
+			</section>
+
+			<section>
+				<md-subheader>Eateries</md-subheader>
+				<md-list layout-padding>
+					<md-list-item ng-repeat="eatery in eateries">
+						<div>
+							<p>{{eatery}}</p>
+						</div>
+					</md-list-item>
+				</md-list>
+			</section>
+
+		</md-content>
+
+	</div>
+</md-bottom-sheet>

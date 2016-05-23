@@ -1,0 +1,26 @@
+<md-bottom-sheet class="md-grid" layout="column" ng-cloak>
+	<div id="gridContainer" ng-controller="gridController as ctrl" ng-cloak>
+		<md-content layout-padding>
+			<md-grid-list
+					md-cols-gt-md="12"
+					md-cols-md="8"
+					md-cols-sm="3"
+					md-cols="3"
+
+					md-row-height-gt-md="1:1"
+					md-row-height="4:3"
+
+					md-gutter-gt-md="2px"
+					md-gutter-gt-sm="4px"
+					md-gutter="8px">
+				<!-- I think for those settings, it needs a default setting, then you can define other different sizes-->
+				<md-grid-tile
+						ng-repeat="tile in ctrl.colorTiles"
+						ng-style="{'background': tile.color}"
+						md-colspan-gt-sm="{{tile.colspan}}"
+						md-rowspan-gt-sm="{{tile.rowspan}}">
+				</md-grid-tile>
+			</md-grid-list>
+		</md-content>
+	</div>
+</md-bottom-sheet>

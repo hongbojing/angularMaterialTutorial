@@ -1,0 +1,835 @@
+<html lang="en" >
+<head>
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-aria.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-messages.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.0/angular-material.min.js"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<style>
+		.frameContainer md-whiteframe {
+			background: #fff;
+			/*height: 100px;*/
+		}
+		md-whiteframe {
+			overflow: auto;
+			min-height: 113px;
+			height: 155px;
+			margin: 3px!important;
+		}
+
+		img {
+			width:100%;
+		}
+
+		/* button */
+
+		.buttondemo section {
+			background: #f7f7f7;
+			border-radius: 3px;
+			text-align: center;
+			margin: 1em;
+			position: relative !important;
+			padding-bottom: 10px;
+		}
+
+		.buttondemo md-content {
+			margin-right: 7px;
+		}
+
+		.buttondemo section .md-button {
+			margin-top: 16px;
+			margin-bottom: 16px;
+		}
+
+		.buttondemo .label {
+			position: absolute;
+			bottom: 5px;
+			left: 7px;
+			font-size: 14px;
+			opacity: 0.54;
+		}
+
+		/* chip.html */
+
+		.closeButton {
+			position: relative;
+			height: 24px;
+			width: 24px;
+			line-height: 30px;
+			text-align: center;
+			background: rgba(0, 0, 0, 0.3);
+			border-radius: 50%;
+			border: none;
+			box-shadow: none;
+			padding: 0;
+			margin: 3px;
+			transition: background 0.15s linear;
+			display: block;
+		}
+
+		/* date picker */
+		.datepickerdemo md-content {
+			padding-bottom: 200px;
+		}
+
+		.datepickerdemo .validation-messages {
+			font-size: 11px;
+			color: darkred;
+			margin: 10px 0 0 25px;
+		}
+
+		
+
+		/* virtual repeat html */
+
+		.vrepeatContainer #horizontal-container {
+			height: 100px;
+			width: 830px;
+		}
+
+		.vrepeatContainer #vertical-container {
+			height: 292px;
+			width: 400px;
+		}
+
+		.vrepeatContainer .repeated-item-horizontal {
+			border-right: 1px solid #ddd;
+			box-sizing: border-box;
+			display: inline-block;
+			height: 84px;
+			padding-top: 35px;
+			text-align: center;
+			width: 50px;
+		}
+
+		.vrepeatContainer .repeated-item-vertical {
+			border-bottom: 1px solid #ddd;
+			box-sizing: border-box;
+			height: 40px;
+			padding-top: 10px;
+		}
+
+		.vrepeatContainer md-content {
+			margin: 16px;
+		}
+		.vrepeatContainer md-virtual-repeat-container {
+			border: solid 1px grey;
+		}
+	</style>
+	<script language="javascript">
+		angular
+				.module('firstApplication', ['ngMaterial'])
+				.controller('frameController', frameController)
+				.controller('testController', testController)
+				.controller('autoCompleteController', autoCompleteController)
+				.controller('bottomSheetController', bottomSheetController)
+				.controller('buttonController', buttonController)
+				.controller('cardController', cardController)
+				.controller('checkBoxController', checkBoxController)
+				.controller('chipController', chipController)
+				.controller('contactChipController', contactChipController)
+				.controller('contentController', contentController)
+				.controller('datePickerController', datePickerController)
+				.controller('dialogController', dialogController)
+				.controller('dividerController', dividerController)
+				.controller('fabSpeedDialController', fabSpeedDialController)
+				.controller('fabToolbarController', fabToolbarController)
+				.controller('flexDirectiveController', flexDirectiveController)
+				.controller('gridController', gridController)
+				.controller('iconController', iconController)
+				.controller('inputController', inputController)
+				.controller('layoutController', layoutController)
+				.controller('listController', listController)
+				.controller('menuController', menuController)
+				.controller('menuBarController', menuBarController)
+				.controller('progressBarController', progressBarController)
+				.controller('progressLinerController', progressLinerController)
+				.controller('radioButtonController', radioButtonController)
+				.controller('selectController', selectController)
+				.controller('sidenavController', sidenavController)
+				.controller('sliderController', sliderController)
+				.controller('subheaderController', subheaderController)
+				.controller('swipeController', swipeController)
+				.controller('switchController', switchController)
+				.controller('tabController', tabController)
+				.controller('themeController', themeController)
+				.controller('toastController', toastController)
+				.controller('toolbarController', toolbarController)
+				.controller('tooltipController', tooltipController)
+				.controller('typographyController', typographyController)
+				.controller('virtualRepeatController', virtualRepeatController)
+				.controller('whiteFrameController', whiteFrameController)
+		;
+
+		function frameController ($scope, $mdBottomSheet) {
+			$scope.COLORS = [
+				{imgName: '1autocomplete', templateUrlValue: 'test', tooltipsValue: 'Autocomplete'},
+				{imgName: '1autocomplete', templateUrlValue: 'autoComplete', tooltipsValue: 'Autocomplete'},
+				{imgName: '2bottomSheet', templateUrlValue: 'bottomSheet', tooltipsValue: 'Bottom Sheet'},
+				{imgName: '3button', templateUrlValue: 'button', tooltipsValue: 'Button'},
+				{imgName: '6card', templateUrlValue: 'card', tooltipsValue: 'Card'},
+				{imgName: '7checkbox', templateUrlValue: 'checkBox', tooltipsValue: 'Checkbox'},
+				{imgName: '8chip', templateUrlValue: 'chip', tooltipsValue: 'Chip'},
+				{imgName: '9contactChip', templateUrlValue: 'contactChip', tooltipsValue: 'Contact Chip'},
+				{imgName: '10content', templateUrlValue: 'content', tooltipsValue: 'Content'},
+				{imgName: '11datePicker', templateUrlValue: 'datePicker', tooltipsValue: 'Date Picker'},
+				{imgName: '12dialog', templateUrlValue: 'dialog', tooltipsValue: 'Dialog'},
+				{imgName: '13divider', templateUrlValue: 'divider', tooltipsValue: 'Divider'},
+				{imgName: '14fabSpeedDial', templateUrlValue: 'fabSpeedDial', tooltipsValue: 'Fab Speed Dial'},
+				{imgName: '15fabToolbar', templateUrlValue: 'fabToolbar', tooltipsValue: 'Fab Tool Bar'},
+				{imgName: '16grid', templateUrlValue: 'grid', tooltipsValue: 'Grid'},
+				{imgName: '17icon', templateUrlValue: 'icon', tooltipsValue: 'Icon'},
+				{imgName: '18input', templateUrlValue: 'input', tooltipsValue: 'Input'},
+				{imgName: '19layout', templateUrlValue: 'layout', tooltipsValue: 'Layout'},
+				{imgName: '20flexDirective', templateUrlValue: 'flexDirective', tooltipsValue: 'Flex Directive'},
+				{imgName: '21list', templateUrlValue: 'list', tooltipsValue: 'List'},
+				{imgName: '22menu', templateUrlValue: 'menu', tooltipsValue: 'Menu'},
+				{imgName: '23menuBar', templateUrlValue: 'menuBar', tooltipsValue: 'Menu Bar'},
+				{imgName: '24progressBar', templateUrlValue: 'progressBar', tooltipsValue: 'Progress Bar'},
+				{imgName: '25progressLiner', templateUrlValue: 'progressLiner', tooltipsValue: 'Progress Liner'},
+				{imgName: '26radioButton', templateUrlValue: 'radioButton', tooltipsValue: 'Radio Button'},
+				{imgName: '27select', templateUrlValue: 'select', tooltipsValue: 'Select'},
+				{imgName: '28sidenav', templateUrlValue: 'sidenav', tooltipsValue: 'Side Nav'},
+				{imgName: '29slider', templateUrlValue: 'slider', tooltipsValue: 'Slider'},
+				{imgName: '30subheader', templateUrlValue: 'subheader', tooltipsValue: 'Sub Header'},
+				{imgName: '31swipe', templateUrlValue: 'swipe', tooltipsValue: 'Swipe'},
+				{imgName: '32switch', templateUrlValue: 'switch', tooltipsValue: 'Switche'},
+				{imgName: '33tab', templateUrlValue: 'tab', tooltipsValue: 'Tab'},
+				{imgName: '34theme', templateUrlValue: 'theme', tooltipsValue: 'Theme'},
+				{imgName: '36toast', templateUrlValue: 'toast', tooltipsValue: 'Toast'},
+				{imgName: '37toolbar', templateUrlValue: 'toolbar', tooltipsValue: 'Tool Bar'},
+				{imgName: '38tooltip', templateUrlValue: 'tooltip', tooltipsValue: 'Tooltip'},
+				{imgName: '39typography', templateUrlValue: 'typography', tooltipsValue: 'Typography'},
+				{imgName: '40virtualRepeat', templateUrlValue: 'virtualRepeat', tooltipsValue: 'Virtual Repeat'},
+				{imgName: '41whiteFrame', templateUrlValue: 'whiteFrame', tooltipsValue: 'White Frame'}
+			];
+
+			$scope.openBottomSheet = function(inputTemplateUrlValue) {
+				$mdBottomSheet.show({
+					templateUrl: 'partials/' + inputTemplateUrlValue + '.html',
+					controller: inputTemplateUrlValue + 'Controller'
+				});
+			};
+		}
+
+		function testController($scope){
+			$scope.test = 'hello world';
+		}
+
+		function autoCompleteController ($timeout, $q, $log) {
+			var self = this;
+			self.simulateQuery = false;
+			self.isDisabled    = false;
+			// list of states to be displayed
+			self.states        = loadStates();
+			self.querySearch   = querySearch;
+			self.selectedItemChange = selectedItemChange;
+			self.searchTextChange   = searchTextChange;
+			self.newState = newState;
+			function newState(state) {
+				alert("This functionality is yet to be implemented!");
+			}
+			function querySearch (query) {
+				var results = query ? self.states.filter( createFilterFor(query) ) : self.states, deferred;
+				if (self.simulateQuery) {
+					deferred = $q.defer();
+					$timeout(function () {
+						deferred.resolve( results );
+					},
+							Math.random() * 1000, false);
+					return deferred.promise;
+				} else {
+					return results;
+				}
+			}
+			function searchTextChange(text) {
+				$log.info('Text changed to ' + text);
+			}
+			function selectedItemChange(item) {
+				$log.info('Item changed to ' + JSON.stringify(item));
+			}
+			//build list of states as map of key-value pairs
+			function loadStates() {
+				var allStates = 'Alabama, Alaska, Arizona, Arkansas, California, Colorado, Connecticut, Delaware,\
+                 Florida, Georgia, Hawaii, Idaho, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana,\
+                 Maine, Maryland, Massachusetts, Michigan, Minnesota, Mississippi, Missouri, Montana,\
+                 Nebraska, Nevada, New Hampshire, New Jersey, New Mexico, New York, North Carolina,\
+                 North Dakota, Ohio, Oklahoma, Oregon, Pennsylvania, Rhode Island, South Carolina,\
+                 South Dakota, Tennessee, Texas, Utah, Vermont, Virginia, Washington, West Virginia,\
+                 Wisconsin, Wyoming';
+				return allStates.split(/, +/g).map( function (state) {
+					return {
+						value: state.toLowerCase(),
+						display: state
+					};
+				});
+			}
+			//filter function for search query
+			function createFilterFor(query) {
+				var lowercaseQuery = angular.lowercase(query);
+				return function filterFn(state) {
+					return (state.value.indexOf(lowercaseQuery) === 0);
+				};
+			}
+		}
+
+		function bottomSheetController ($scope, $mdBottomSheet) {
+			$scope.openBottomSheet = function() {
+				$mdBottomSheet.show({
+					template: '<md-bottom-sheet>Learn <b>Angular Material</b> @ TutorialsPoint.com!</md-bottom-sheet>'
+				});
+			};
+		}
+
+		function buttonController ($scope) {
+			$scope.title1 = 'Button';
+			$scope.title4 = 'Warn';
+			$scope.isDisabled = true;
+			$scope.googleUrl = 'http://google.com';
+		}
+
+		function cardController($scope){
+			$scope.test = 'hello world';
+		}
+
+		function checkBoxController($scope){
+			$scope.test = 'hello world';
+		}
+
+		function chipController ($scope) {
+			var self = this;
+			self.readonly = false;
+			// Lists of fruit names and Vegetable objects
+			self.fruitNames = ['Apple', 'Banana', 'Orange'];
+			self.roFruitNames = angular.copy(self.fruitNames);
+			self.tags = [];
+			self.vegObjs = [
+				{
+					'name' : 'Broccoli',
+					'type' : 'Brassica'
+				},
+				{
+					'name' : 'Cabbage',
+					'type' : 'Brassica'
+				},
+				{
+					'name' : 'Carrot',
+					'type' : 'Umbelliferous'
+				}
+			];
+			self.newVeg = function(chip) {
+				return {
+					name: chip,
+					type: 'unknown'
+				};
+			};
+		}
+
+		function contactChipController ($scope) {
+			var self = this;
+			self.querySearch = querySearch;
+			self.allContacts = loadContacts();
+			self.contacts = [self.allContacts[0]];
+			self.filterSelected = true;
+
+			function querySearch (query) {
+				var results = query ?
+						self.allContacts.filter(createFilterFor(query)) : [];
+				return results;
+			}
+
+			function createFilterFor(query) {
+				var lowercaseQuery = angular.lowercase(query);
+				return function filterFn(contact) {
+					return (contact._lowername.indexOf(lowercaseQuery) != -1);;
+				};
+			}
+
+			function loadContacts() {
+				var contacts = [
+					'Roberto Karlos',
+					'Bob Crestor',
+					'Nigel Rick',
+					'Narayana Garner',
+					'Anita Gros',
+					'Megan Smith',
+					'Tsvetko Metzger',
+					'Hector Simek',
+					'James Roody'
+				];
+				return contacts.map(function (c, index) {
+					var cParts = c.split(' ');
+					var contact = {
+						name: c,
+						email: cParts[0][0].toLowerCase() + '.' + cParts[1].toLowerCase() + '@example.com',
+						image: 'http://lorempixel.com/50/50/people?' + index
+					};
+					contact._lowername = contact.name.toLowerCase();
+					return contact;
+				});
+			}
+		}
+
+		function contentController($scope){
+			$scope.test = 'hello world';
+		}
+
+		function datePickerController($scope) {
+			$scope.myDate = new Date();
+			$scope.minDate = new Date(
+					$scope.myDate.getFullYear(),
+					$scope.myDate.getMonth() - 2,
+					$scope.myDate.getDate());
+			$scope.maxDate = new Date(
+					$scope.myDate.getFullYear(),
+					$scope.myDate.getMonth() + 2,
+					$scope.myDate.getDate());
+			$scope.onlyWeekendsPredicate = function (date) {
+				var day = date.getDay();
+				return day === 0 || day === 6;
+			}
+		}
+
+		function dialogController ($scope, $mdDialog) {
+			$scope.status = '';
+			$scope.items = [1,2,3,4,5];
+			$scope.showAlert = function(ev) {
+				$mdDialog.show(
+						$mdDialog.alert()
+								.parent(angular.element(document.querySelector('#dialogContainer')))
+								.clickOutsideToClose(true)
+								.title('TutorialsPoint.com')
+								.textContent('Welcome to TutorialsPoint.com')
+								.ariaLabel('Welcome to TutorialsPoint.com')
+								.ok('Ok!')
+								.targetEvent(ev)
+				);
+			};
+
+
+			$scope.showConfirm = function(event) {
+				var confirm = $mdDialog.confirm()
+						.title('Are you sure to delete the record?')
+						.textContent('Record will be deleted permanently.')
+						.ariaLabel('TutorialsPoint.com')
+						.targetEvent(event)
+						.ok('Yes')
+						.cancel('No');
+				$mdDialog.show(confirm).then(function() {
+					$scope.status = 'Record deleted successfully!';
+				}, function() {
+					$scope.status = 'You decided to keep your record.';
+				});
+			};
+
+			$scope.showCustom = function(event) {
+				$mdDialog.show({
+					clickOutsideToClose: true,
+					scope: $scope,
+					preserveScope: true,
+					template: '<md-dialog>' +
+					'  <md-dialog-content>' +
+					'     Welcome to TutorialsPoint.com' +
+					'  </md-dialog-content>' +
+					'</md-dialog>',
+					controller: function DialogController($scope, $mdDialog) {
+						$scope.closeDialog = function() {
+							$mdDialog.hide();
+						}
+					}
+				});
+			};
+		}
+
+		function dividerController ($scope) {
+			var self = this;
+			self.allContacts = loadContacts();
+			self.contacts = [self.allContacts[0]];
+
+			function loadContacts() {
+				var contacts = [
+					'Roberto Karlos',
+					'Bob Crestor',
+					'Nigel Rick',
+					'Narayana Garner'
+				];
+				return contacts.map(function (c, index) {
+					var cParts = c.split(' ');
+					var contact = {
+						name: c,
+						email: cParts[0][0].toLowerCase() + '.' + cParts[1].toLowerCase() + '@example.com',
+						image: 'http://lorempixel.com/50/50/people?' + index
+					};
+					contact._lowername = contact.name.toLowerCase();
+					return contact;
+				});
+			}
+		}
+
+		function fabSpeedDialController ($scope) {
+			this.topDirections = ['left', 'up'];
+			this.bottomDirections = ['down', 'right'];
+			this.isOpen = false;
+			this.availableModes = ['md-fling', 'md-scale'];
+			this.selectedMode = 'md-fling';
+			this.availableDirections = ['up', 'down', 'left', 'right'];
+			this.selectedDirection = 'up';
+		}
+
+		function fabToolbarController ($scope) {
+			$scope.isOpen = false;
+			$scope.count = 0;
+			$scope.selectedDirection = 'left';
+		}
+
+		function flexDirectiveController($scope){
+			$scope.test = 'hello world';
+		}
+
+		function gridController ($scope) {
+			var COLORS = ['#ffebee', '#ffcdd2', '#ef9a9a', '#e57373', '#ef5350', '#f44336', '#e53935', '#d32f2f', '#c62828', '#b71c1c', '#ff8a80', '#ff5252','#ff1744', '#d50000', '#f8bbd0', '#f48fb1', '#f06292', '#ec407a', '#e91e63', '#d81b60', '#c2185b', '#ad1457', '#880e4f', '#ff80ab', '#ff4081', '#f50057', '#c51162', '#e1bee7', '#ce93d8', '#ba68c8', '#ab47bc', '#9c27b0', '#8e24aa', '#7b1fa2', '#4a148c', '#ea80fc', '#e040fb', '#d500f9', '#aa00ff', '#ede7f6', '#d1c4e9', '#b39ddb', '#9575cd', '#7e57c2', '#673ab7', '#5e35b1', '#4527a0', '#311b92', '#b388ff', '#7c4dff', '#651fff', '#6200ea', '#c5cae9', '#9fa8da', '#7986cb', '#5c6bc0', '#3f51b5', '#3949ab', '#303f9f', '#283593', '#1a237e', '#8c9eff', '#536dfe', '#3d5afe', '#304ffe', '#e3f2fd', '#bbdefb', '#90caf9', '#64b5f6', '#42a5f5', '#2196f3', '#1e88e5', '#1976d2', '#1565c0', '#0d47a1', '#82b1ff', '#448aff', '#2979ff', '#2962ff', '#b3e5fc', '#81d4fa', '#4fc3f7', '#29b6f6', '#03a9f4', '#039be5', '#0288d1', '#0277bd', '#01579b', '#80d8ff', '#40c4ff', '#00b0ff', '#0091ea', '#e0f7fa', '#b2ebf2', '#80deea', '#4dd0e1', '#26c6da', '#00bcd4', '#00acc1', '#0097a7', '#00838f', '#006064', '#84ffff', '#18ffff', '#00e5ff', '#00b8d4', '#e0f2f1', '#b2dfdb', '#80cbc4', '#4db6ac', '#26a69a', '#009688', '#00897b', '#00796b', '#00695c', '#a7ffeb', '#64ffda', '#1de9b6', '#00bfa5', '#e8f5e9', '#c8e6c9', '#a5d6a7', '#81c784', '#66bb6a', '#4caf50', '#43a047', '#388e3c', '#2e7d32', '#1b5e20', '#b9f6ca', '#69f0ae', '#00e676', '#00c853', '#f1f8e9', '#dcedc8', '#c5e1a5', '#aed581', '#9ccc65', '#8bc34a', '#7cb342', '#689f38', '#558b2f', '#33691e', '#ccff90', '#b2ff59', '#76ff03', '#64dd17', '#f9fbe7', '#f0f4c3', '#e6ee9c', '#dce775', '#d4e157', '#cddc39', '#c0ca33', '#afb42b', '#9e9d24', '#827717', '#f4ff81', '#eeff41', '#c6ff00', '#aeea00', '#fffde7', '#fff9c4', '#fff59d', '#fff176', '#ffee58', '#ffeb3b', '#fdd835', '#fbc02d', '#f9a825', '#f57f17', '#ffff8d', '#ffff00', '#ffea00', '#ffd600', '#fff8e1', '#ffecb3', '#ffe082', '#ffd54f', '#ffca28', '#ffc107', '#ffb300', '#ffa000', '#ff8f00', '#ff6f00', '#ffe57f', '#ffd740', '#ffc400', '#ffab00', '#fff3e0', '#ffe0b2', '#ffcc80', '#ffb74d', '#ffa726', '#ff9800', '#fb8c00', '#f57c00', '#ef6c00', '#e65100', '#ffd180', '#ffab40', '#ff9100', '#ff6d00', '#fbe9e7', '#ffccbc', '#ffab91', '#ff8a65', '#ff7043', '#ff5722', '#f4511e', '#e64a19', '#d84315', '#bf360c', '#ff9e80', '#ff6e40', '#ff3d00', '#dd2c00', '#d7ccc8', '#bcaaa4', '#795548', '#d7ccc8', '#bcaaa4', '#8d6e63', '#eceff1', '#cfd8dc', '#b0bec5', '#90a4ae', '#78909c', '#607d8b', '#546e7a', '#cfd8dc', '#b0bec5', '#78909c'];
+//			var COLORS = ['#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', '#000000', '#ffffff', ];
+			this.colorTiles = (function() {
+				var tiles = [];
+				for (var i = 0; i < 46; i++) {
+					tiles.push({
+						color: randomColor(),
+						colspan: randomSpan(),
+						rowspan: randomSpan()
+					});
+				}
+				return tiles;
+			})();
+
+			function randomColor() {
+				return COLORS[Math.floor(Math.random() * COLORS.length)];
+			}
+
+			function randomSpan() {
+				var r = Math.random();
+				if (r < 0.8) {
+					return 1;
+				} else if (r < 0.9) {
+					return 2;
+				} else {
+					return 3;
+				}
+			}
+		}
+
+		function iconController ($scope) {
+			var iconData = [
+				{name: 'accessibility'  , color: "#000" },
+				{name: 'question_answer', color: "rgb(89, 226, 168)" },
+				{name: 'backup'         , color: "#A00" },
+				{name: 'email'          , color: "#00A" }
+			];
+			$scope.fonts = [].concat(iconData);
+			$scope.sizes = [
+				{size:"md-18",padding:0},
+				{size:"md-24",padding:2},
+				{size:"md-36",padding:6},
+				{size:"md-48",padding:10}
+			];
+		}
+
+		function inputController ($scope) {
+			$scope.project = {
+				comments: 'Comments',
+			};
+		}
+
+		function layoutController($scope){
+			$scope.test = 'hello world';
+		}
+
+		function listController ($scope) {
+			var self = this;
+			self.allContacts = loadContacts();
+			self.contacts = [self.allContacts[0]];
+
+			function loadContacts() {
+				var contacts = [
+					'Roberto Karlos',
+					'Bob Crestor',
+					'Nigel Rick',
+					'Narayana Garner'
+				];
+				return contacts.map(function (c, index) {
+					var cParts = c.split(' ');
+					var contact = {
+						name: c,
+						email: cParts[0][0].toLowerCase() + '.' + cParts[1].toLowerCase() + '@example.com',
+						image: 'http://lorempixel.com/50/50/people?' + index
+					};
+					contact._lowername = contact.name.toLowerCase();
+					return contact;
+				});
+			}
+		}
+
+		function menuController ($scope, $mdDialog) {
+			var originatorEv;
+			this.openMenu = function($mdOpenMenu, ev) {
+				originatorEv = ev;
+				$mdOpenMenu(ev);
+			};
+			this.menuItemClick = function(index) {
+				$mdDialog.show(
+						$mdDialog.alert()
+								.title('TutorialsPoint.com')
+								.textContent('Menu Item clicked, index: ' + index)
+								.ok('OK')
+								.targetEvent(originatorEv)
+				);
+				originatorEv = null;
+			};
+		}
+
+		function menuBarController ($scope, $mdDialog) {
+			this.sampleAction = function(name, ev) {
+				$mdDialog.show($mdDialog.alert()
+						.title(name)
+						.textContent('Start learning "' + name + '!')
+						.ok('OK')
+						.targetEvent(ev)
+				);
+			};
+		}
+
+		function progressBarController ($scope, $interval) {
+			var self = this,  j= 0, counter = 0;
+			self.modes = [ ];
+			self.activated = true;
+			self.determinateValue = 30;
+			self.toggleActivation = function() {
+				if ( !self.activated ) self.modes = [ ];
+				if (  self.activated ) j = counter = 0;
+			};
+
+			$interval(function() {
+				self.determinateValue += 1;
+				if (self.determinateValue > 100) {
+					self.determinateValue = 30;
+				}
+				if ( (j < 5) && !self.modes[j] && self.activated ) {
+					self.modes[j] = 'indeterminate';
+				}
+				if ( counter++ % 4 == 0 ) j++;
+			}, 100, 0, true);
+		}
+
+		function progressLinerController ($scope, $interval) {
+			var self = this,  j= 0, counter = 0;
+			self.modes = [ ];
+			self.activated = true;
+			self.determinateValue = 30;
+			self.toggleActivation = function() {
+				if ( !self.activated ) self.modes = [ ];
+				if (  self.activated ) j = counter = 0;
+			};
+
+			$interval(function() {
+				self.determinateValue += 1;
+				if (self.determinateValue > 100) {
+					self.determinateValue = 30;
+				}
+				if ( (j < 5) && !self.modes[j] && self.activated ) {
+					self.modes[j] = 'indeterminate';
+				}
+				if ( counter++ % 4 == 0 ) j++;
+			}, 100, 0, true);
+		}
+
+		function radioButtonController ($scope) {
+			$scope.radioData = [
+				{ label: 'Apple', value: 'Apple' },
+				{ label: 'Banana', value: 'Banana' },
+				{ label: 'Mango', value: 'Mango', isDisabled: true },
+				{ label: 'Orange', value: 'Orange' }
+			];
+			$scope.group='Banana';
+		}
+
+		function selectController ($scope) {
+			$scope.users = [
+				{ id: 1, name: 'Mahesh' },
+				{ id: 2, name: 'Ramesh' },
+				{ id: 3, name: 'Sohan' }
+			];
+			$scope.selectedUser = { id: 2, name: 'Ramesh' };
+			$scope.drinks = [
+				{ category: 'hard', name: 'Beer' },
+				{ category: 'hard', name: 'Rum' },
+				{ category: 'hard', name: 'Vodka' },
+				{ category: 'hard', name: 'Whiski' },
+				{ category: 'soft', name: 'Coke' },
+				{ category: 'soft', name: 'Pepsi' },
+				{ category: 'soft', name: 'Pulp Maid' },
+				{ category: 'soft', name: 'Real Juice' }
+			];
+		}
+
+		function sidenavController ($scope, $mdSidenav) {
+			$scope.openLeftMenu = function() {
+				$mdSidenav('left').toggle();
+			};
+			$scope.openRightMenu = function() {
+				$mdSidenav('right').toggle();
+			};
+		}
+
+		function sliderController ($scope, $mdSidenav) {
+			$scope.color = {
+				red: Math.floor(Math.random() * 255),
+				green: Math.floor(Math.random() * 255),
+				blue: Math.floor(Math.random() * 255)
+			};
+			$scope.rating = 3;
+			$scope.disabled = 70;
+		}
+
+		function subheaderController ($scope) {
+			$scope.fruitNames = ['Apple', 'Banana', 'Orange'];
+			$scope.vegNames = ['Carrot', 'Potato', 'Cabbage'];
+			$scope.eateries = ['Milk', 'Bread'];
+		}
+
+		function swipeController ($scope) {
+			$scope.onSwipeLeft = function(ev) {
+				alert('Swiped Left!');
+			};
+			$scope.onSwipeRight = function(ev) {
+				alert('Swiped Right!');
+			};
+			$scope.onSwipeUp = function(ev) {
+				alert('Swiped Up!');
+			};
+			$scope.onSwipeDown = function(ev) {
+				alert('Swiped Down!');
+			};
+		}
+
+		function switchController ($scope) {
+			$scope.data = {
+				switch1: true,
+				switch2: false,
+				switch3: false,
+				switch4: true,
+				switch5: true,
+				switch6: false
+			};
+			$scope.message = 'false';
+			$scope.onChange = function(state) {
+				$scope.message = state;
+			};
+		}
+
+		function tabController ($scope) {
+			$scope.data = {
+				selectedIndex: 0,
+				secondLocked:  true,
+				secondLabel:   "2",
+				bottom:        false
+			};
+			$scope.next = function() {
+				$scope.data.selectedIndex = Math.min($scope.data.selectedIndex + 1, 2) ;
+			};
+			$scope.previous = function() {
+				$scope.data.selectedIndex = Math.max($scope.data.selectedIndex - 1, 0);
+			};
+		}
+
+		function themeController($scope){
+			$scope.test = 'hello world';
+		}
+
+		function toastController ($scope, $mdToast, $document) {
+			$scope.showToast1 = function() {
+				$mdToast.show(
+						$mdToast.simple()
+								.textContent('Hello World!')
+								.hideDelay(3000)
+				);
+			};
+
+			$scope.showToast2 = function() {
+				var toast = $mdToast.simple()
+						.textContent('Hello World!')
+						.action('OK')
+						.highlightAction(false);
+				$mdToast.show(toast).then(function(response) {
+					if ( response == 'ok' ) {
+						alert('You clicked \'OK\'.');
+					}
+				});
+			}
+		}
+
+		function toolbarController ($scope) {
+			var self = this;
+			self.allContacts = loadContacts();
+			self.contacts = [self.allContacts[0]];
+
+			function loadContacts() {
+				var contacts = [
+					'Roberto Karlos',
+					'Bob Crestor',
+					'Nigel Rick',
+					'Narayana Garner'
+				];
+				return contacts.map(function (c, index) {
+					var cParts = c.split(' ');
+					var contact = {
+						name: c,
+						email: cParts[0][0].toLowerCase() + '.' + cParts[1].toLowerCase() + '@example.com',
+						image: 'http://lorempixel.com/50/50/people?' + index
+					};
+					contact._lowername = contact.name.toLowerCase();
+					return contact;
+				});
+			}
+		}
+
+		function tooltipController ($scope) {
+			$scope.demo = {
+				showTooltip : false,
+				tooltipDirection : ''
+			};
+		}
+
+		function typographyController($scope){
+			$scope.test = 'hello world';
+		}
+
+		function virtualRepeatController ($scope) {
+			$scope.items = [];
+			for (var i = 0; i < 1000; i++) {
+				$scope.items.push(i);
+			}
+			console.log($scope.items);
+		}
+
+		function whiteFrameController($scope){
+			$scope.test = 'hello world';
+		}
+	</script>
+</head>
+<body ng-app="firstApplication">
+<div class="frameContainer" ng-controller="frameController as ctrl" layout="row" layout-padding layout-wrap layout-fill style="padding-bottom: 32px;" ng-cloak>
+
+	<md-whiteframe class="md-whiteframe-1dp"
+				   flex-sm="45" flex-gt-sm="30" flex-gt-md="10"
+				   layout layout-align="center center"
+				   ng-repeat="tils in COLORS">
+		<a href="#" ng-click="openBottomSheet(tils.templateUrlValue)">
+			<img ng-src="../img/{{tils.imgName}}.png" alt="xx">
+		</a>
+		<md-tooltip md-visible="false" md-direction="bottom">{{tils.tooltipsValue}} !</md-tooltip>
+	</md-whiteframe>
+
+</div>
+</body>
+</html>

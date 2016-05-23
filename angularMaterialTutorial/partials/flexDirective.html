@@ -1,0 +1,42 @@
+<style>
+	.box {
+		color:white;
+		padding:10px;
+		text-align:center;
+		border-style: inset;
+	}
+	.green {
+		background:green;
+	}
+	.blue {
+		background:blue;
+	}
+</style>
+<md-bottom-sheet class="md-grid" layout="column" ng-cloak>
+
+	<div id="layoutContainer" ng-controller="flexDirectiveController as ctrl" layout="row" style="height:100px;" ng-cloak layout-wrap>
+		<div flex="30" class="green box">
+			[flex="30"]
+		</div>
+		<div flex="45" class="blue box">
+			[flex="45"]
+		</div>
+		<div flex="25" class="green box">
+			[flex="25"]
+		</div>
+
+		<div flex="33" class="green box">
+			[flex="33"]
+		</div>
+		<div flex="66" class="blue box">
+			[flex="66"]
+		</div>
+
+		<div flex="50" class="blue box">
+			[flex="50"]
+		</div>
+		<div flex class="green box">
+			[flex]
+		</div>
+	</div>
+</md-bottom-sheet>

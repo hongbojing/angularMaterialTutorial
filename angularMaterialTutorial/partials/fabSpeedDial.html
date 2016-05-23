@@ -1,0 +1,76 @@
+<style>
+	.fabSpeedDial .text-capitalize {
+		text-transform: capitalize;
+	}
+	.fabSpeedDial .md-fab:hover, .fabSpeedDialdemoBasicUsage .md-fab.md-focused {
+		background-color: #000 !important;
+	}
+	.fabSpeedDial p.note {
+		font-size: 1.2rem;
+	}
+	.fabSpeedDial .lock-size {
+		min-width: 300px;
+		min-height: 300px;
+		width: 300px;
+		height: 300px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+</style>
+<md-bottom-sheet class="md-grid" layout="column" ng-cloak>
+	<div class="fabSpeedDial" id="speedDialContainer" ng-controller="fabSpeedDialController as ctrl" layout="row" ng-cloak>
+		<md-content>
+			<div class="lock-size" layout="row" layout-align="center center">
+				<md-fab-speed-dial md-open="ctrl.isOpen" md-direction="{{ctrl.selectedDirection}}"
+								   ng-class="ctrl.selectedMode">
+					<md-fab-trigger>
+						<md-button aria-label="menu" class="md-fab md-warn">
+							<md-icon class="material-icons">menu</md-icon>
+						</md-button>
+					</md-fab-trigger>
+
+					<md-fab-actions>
+						<md-button aria-label="Add" class="md-fab md-raised md-mini md-warn">
+							<md-icon class="material-icons" aria-label="Add">add</md-icon>
+						</md-button>
+
+						<md-button aria-label="Insert Link" class="md-fab md-raised md-mini md-warn">
+							<md-icon class="material-icons" aria-label="Insert Link">insert_link</md-icon>
+						</md-button>
+
+						<md-button aria-label="Edit" class="md-fab md-raised md-mini md-warn">
+							<md-icon class="material-icons" aria-label="Edit">mode_edit</md-icon>
+						</md-button>
+					</md-fab-actions>
+				</md-fab-speed-dial>
+			</div>
+
+			<div layout="row" layout-align="space-around">
+				<div layout="column" layout-align="start center">
+					<b>Direction</b>
+					<md-radio-group ng-model="ctrl.selectedDirection">
+						<md-radio-button ng-repeat="direction in ctrl.availableDirections"
+										 ng-value="direction" class="text-capitalize">
+							{{direction}}
+						</md-radio-button>
+					</md-radio-group>
+				</div>
+
+				<div layout="column" layout-align="start center">
+					<b>Open/Closed</b>
+					<md-checkbox ng-model="ctrl.isOpen">
+						Open
+					</md-checkbox>
+				</div>
+				<div layout="column" layout-align="start center">
+					<b>Animation Modes</b>
+					<md-radio-group ng-model="ctrl.selectedMode">
+						<md-radio-button ng-repeat="mode in ctrl.availableModes" ng-value="mode">
+							{{mode}}
+						</md-radio-button>
+					</md-radio-group>
+				</div>
+			</div>
+		</md-content>
+	</div>
+</md-bottom-sheet>

@@ -1,0 +1,127 @@
+<md-bottom-sheet class="md-grid" layout="column" ng-cloak>
+	<div class="buttondemo" ng-controller="buttonController">
+		<md-content>
+
+
+			<section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+
+				<md-button>{{title1}}</md-button>
+
+				<md-button md-no-ink class="md-primary">Primary (md-no-ink)</md-button>
+
+				<md-button ng-disabled="true" class="md-primary">Disabled</md-button>
+
+				<md-button class="md-warn">{{title4}}</md-button>
+
+				<div class="label">Flat Buttons</div>
+
+			</section>
+
+
+			<section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+
+				<md-button class="md-raised">Button</md-button>
+
+				<md-button class="md-raised md-primary">Primary</md-button>
+
+				<md-button ng-disabled="true" class="md-raised md-primary">Disabled</md-button>
+
+				<md-button class="md-raised md-warn">Warn</md-button>
+
+				<div class="label">Raised Buttons</div>
+			</section>
+
+
+			<section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+				<md-button class="md-fab" aria-label="add">
+					<md-icon class="material-icons">add</md-icon>
+				</md-button>
+
+				<md-button class="md-fab md-primary" aria-label="add">
+					<md-icon class="material-icons">add</md-icon>
+				</md-button>
+
+
+				<md-button class="md-fab" ng-disabled="true" aria-label="add">
+					<md-icon class="material-icons">add</md-icon>
+				</md-button>
+
+
+				<md-button class="md-fab md-primary md-hue-2" aria-label="add">
+					<md-icon class="material-icons">add</md-icon>
+				</md-button>
+
+
+				<md-button class="md-fab md-mini" aria-label="add">
+					<md-icon class="material-icons">add</md-icon>
+				</md-button>
+
+
+				<md-button class="md-fab md-mini md-primary" aria-label="add">
+					<md-icon class="material-icons" style="color: greenyellow;">add</md-icon>
+				</md-button>
+				<div class="label">FAB Buttons</div>
+			</section>
+
+
+			<section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+
+				<md-button ng-href="{{googleUrl}}" target="_blank">Default Link</md-button>
+
+
+				<md-button class="md-primary" ng-href="{{googleUrl}}" target="_blank">Primary Link</md-button>
+
+
+				<md-button>Default Button</md-button>
+
+
+				<div class="label">Link vs. Button</div>
+
+			</section>
+
+
+			<section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+
+				<md-button class="md-primary md-hue-1">Primary Hue 1</md-button>
+
+
+				<md-button class="md-warn md-raised md-hue-2">Warn Hue 2</md-button>
+
+
+				<md-button class="md-accent">Accent</md-button>
+
+
+				<md-button class="md-accent md-raised md-hue-1">Accent Hue 1</md-button>
+
+				<div class="label">Themed Buttons</div>
+
+			</section>
+
+
+			<section layout="row" layout-sm="column" layout-align="center center" layout-wrap>
+				<md-button class="md-icon-button md-primary" aria-label="Add">
+					<md-icon class="material-icons">add</md-icon>
+				</md-button>
+
+				<md-button class="md-icon-button md-accent" aria-label="Add">
+					<md-icon class="material-icons">add</md-icon>
+				</md-button>
+
+				<md-button class="md-icon-button" aria-label="Add">
+					<md-icon class="material-icons">add</md-icon>
+				</md-button>
+				<md-button href="http://google.com"
+						   title="Open Google.com in new window"
+						   target="_blank"
+						   ng-disabled="true"
+						   class="md-icon-button launch">
+					<md-icon class="material-icons">add</md-icon>
+				</md-button>
+				<div class="label">Icon Buttons</div>
+			</section>
+
+
+		</md-content>
+	</div>
+
+</md-bottom-sheet>

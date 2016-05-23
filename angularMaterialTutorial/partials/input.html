@@ -1,0 +1,37 @@
+<md-bottom-sheet class="md-grid" layout="column" ng-cloak>
+	<div id="inputContainer" class="inputDemo" ng-controller="inputController as ctrl" ng-cloak>
+		<md-content layout-padding>
+			<form name="projectForm">
+
+				<md-input-container class="md-block">
+					<label>User Name</label>
+					<input required name="userName" ng-model="project.userName">
+					<div ng-messages="projectForm.userName.$error">
+						<div ng-message="required">This is required.</div>
+					</div>
+				</md-input-container>
+
+				<md-input-container class="md-block">
+					<label>Email</label>
+					<input required type="email" name="userEmail" ng-model="project.userEmail"
+						   minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" />
+					<div ng-messages="projectForm.userEmail.$error" role="alert">
+						<div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+							Your email must be between 10 and 100 characters long and should be a valid email address.
+						</div>
+					</div>
+				</md-input-container>
+
+				<md-input-container class="md-block">
+					<label>Comments</label>
+					<input md-maxlength="300" required name="comments" ng-model="project.comments">
+					<div ng-messages="projectForm.comments.$error">
+						<div ng-message="required">This is required.</div>
+						<div ng-message="md-maxlength">The comments has to be less than 300 characters long.</div>
+					</div>
+				</md-input-container>
+			</form>
+		</md-content>
+	</div>
+
+</md-bottom-sheet>

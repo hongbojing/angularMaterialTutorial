@@ -1,0 +1,47 @@
+<md-bottom-sheet class="md-grid" layout="column" ng-cloak>
+	<div id="toolbarContainer" ng-controller="fabToolbarController as ctrl" ng-cloak>
+		<md-fab-toolbar md-open="ctrl.isOpen" md-direction="{{ctrl.selectedDirection}}"
+						count="ctrl.count">
+
+			<md-fab-trigger class="align-with-text">
+				<md-button aria-label="menu" class="md-fab md-primary">
+					<md-icon class="material-icons">menu</md-icon>
+				</md-button>
+			</md-fab-trigger>
+
+			<md-toolbar>
+				<md-fab-actions class="md-toolbar-tools">
+					<md-button aria-label="Add" class="md-fab md-raised md-mini md-accent">
+						<md-icon class="material-icons" aria-label="Add">add</md-icon>
+					</md-button>
+					<md-button aria-label="Insert Link" class="md-fab md-raised md-mini md-accent">
+						<md-icon class="material-icons" aria-label="Insert Link">insert_link</md-icon>
+					</md-button>
+					<md-button aria-label="Edit" class="md-fab md-raised md-mini md-accent">
+						<md-icon class="material-icons" aria-label="Edit">mode_edit</md-icon>
+					</md-button>
+				</md-fab-actions>
+			</md-toolbar>
+		</md-fab-toolbar>
+
+		<md-content class="md-padding" layout="column">
+			<div layout="row" layout-align="space-around">
+				<div layout="column">
+					<b>Open/Closed</b>
+					<md-radio-group ng-model="ctrl.isOpen">
+						<md-radio-button ng-value="true">Open</md-radio-button>
+						<md-radio-button ng-value="false">Closed</md-radio-button>
+					</md-radio-group>
+				</div>
+				<div layout="column">
+					<b>Direction</b>
+					<md-radio-group ng-model="ctrl.selectedDirection">
+						<md-radio-button ng-value="'left'">Left</md-radio-button>
+						<md-radio-button ng-value="'right'">Right</md-radio-button>
+					</md-radio-group>
+				</div>
+			</div>
+		</md-content>
+
+	</div>
+</md-bottom-sheet>

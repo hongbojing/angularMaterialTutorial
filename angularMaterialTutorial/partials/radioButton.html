@@ -1,0 +1,17 @@
+<md-bottom-sheet class="md-grid" layout="column" ng-cloak>
+
+	<div id="radioButtonsContainer" ng-controller="radioButtonController as ctrl" layout="column" ng-cloak>
+		<p>Selected Value: <span>{{ group }}</span> </p>
+
+		<md-radio-group ng-model="group" class="md-primary">
+			<md-radio-button ng-repeat="d in radioData"
+							 ng-value="d.value"
+							 ng-disabled=" d.isDisabled "
+							 ng-class="{'md-align-top-left': $index==1}" >
+				{{ d.label }}<br/>
+			</md-radio-button>
+		</md-radio-group>
+
+	</div>
+
+</md-bottom-sheet>

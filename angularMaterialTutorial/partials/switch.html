@@ -1,0 +1,30 @@
+<md-bottom-sheet class="md-grid" layout="column" ng-cloak>
+	<div id="switchContainer" ng-controller="switchController as ctrl" layout="column" ng-cloak>
+
+		<md-switch ng-model="data.switch1" aria-label="Switch 1">
+			Switch 1: {{ data.switch1 }}
+		</md-switch>
+
+		<md-switch ng-model="data.switch2" aria-label="Switch 2" ng-true-value="'true'" ng-false-value="'false'" class="md-warn">
+			Switch 2 (md-warn): {{ data.switch2 }}
+		</md-switch>
+
+		<md-switch ng-disabled="true" aria-label="Disabled switch" ng-model="disabledModel">
+			Switch 3 (Disabled)
+		</md-switch>
+
+		<md-switch ng-disabled="true" aria-label="Disabled active switch" ng-model="data.switch4">
+			Switch 4 (Disabled, Active)
+		</md-switch>
+
+		<md-switch class="md-primary" md-no-ink aria-label="Switch No Ink" ng-model="data.switch5">
+			Switch 5 (md-primary): No Ink
+		</md-switch>
+
+		<md-switch ng-model="data.switch6" aria-label="Switch 6" ng-change="onChange(data.switch6)">
+			Switch 6 : {{ message }}
+		</md-switch>
+
+	</div>
+</md-bottom-sheet>
+

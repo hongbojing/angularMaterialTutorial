@@ -1,0 +1,54 @@
+<md-bottom-sheet class="md-grid" layout="column" ng-cloak>
+
+	<div id="menubarContainer" ng-controller="menuBarController as ctrl" layout="row" ng-cloak>
+		<md-toolbar class="md-menu-toolbar">
+			<div layout="row">
+				<div>
+					<h2 class="md-toolbar-tools">Learn @TutorialsPoint</h2>
+
+					<md-menu-bar>
+						<md-menu>
+							<button ng-click="$mdOpenMenu()">Tutorials</button>
+
+							<md-menu-content>
+
+								<md-menu-item>
+									<md-button ng-click="ctrl.sampleAction('share', $event)">Share...</md-button>
+								</md-menu-item>
+
+								<md-menu-divider></md-menu-divider>
+
+								<md-menu-item>
+									<md-menu>
+										<md-button ng-click="$mdOpenMenu()">Learn</md-button>
+
+										<md-menu-content>
+											<md-menu-item><md-button ng-click="ctrl.sampleAction('HTML5', $event)">HTML5</md-button></md-menu-item>
+
+											<md-menu-item><md-button ng-click="ctrl.sampleAction('jQuery', $event)">jQuery</md-button></md-menu-item>
+
+											<md-menu-item><md-button ng-click="ctrl.sampleAction('AngularJS', $event)">AngularJS      </md-button></md-menu-item>
+
+											<md-menu-item><md-button disabled="disabled" ng-click="ctrl.sampleAction('AngularJS 2.0', $event)">AngularJS 2.0</md-button></md-menu-item>
+
+											<md-menu-divider></md-menu-divider>
+
+											<md-menu-item><md-button ng-click="ctrl.sampleAction('CSS', $event)">CSS</md-button></md-menu-item>
+
+										</md-menu-content>
+
+									</md-menu>
+
+								</md-menu-item>
+
+							</md-menu-content>
+
+						</md-menu>
+
+					</md-menu-bar>
+				</div>
+			</div>
+		</md-toolbar>
+	</div>
+
+</md-bottom-sheet>

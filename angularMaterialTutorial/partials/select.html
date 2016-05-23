@@ -1,0 +1,25 @@
+<md-bottom-sheet class="md-grid" layout="column" ng-cloak>
+
+	<div id="selectContainer" ng-controller="selectController as ctrl" layout="row" ng-cloak>
+
+		<md-input-container>
+			<label>User</label>
+			<md-select ng-model="selectedUser">
+				<md-option ng-value="user" ng-repeat="user in users">{{ user.name }}</md-option>
+			</md-select>
+		</md-input-container>
+
+		<md-input-container>
+			<label>Drinksss</label>
+			<md-select ng-model="drink">
+				<md-optgroup label="Hard Drinkss">
+					<md-option ng-value="drink.name" ng-repeat="drink in drinks | filter: {category: 'hard' }">{{drink.name}}</md-option>
+				</md-optgroup>
+				<md-optgroup label="Soft Drinks">
+					<md-option ng-value="drink.name" ng-repeat="drink in drinks | filter: {category: 'soft' }">{{drink.name}}</md-option>
+				</md-optgroup>
+			</md-select>
+		</md-input-container>
+	</div>
+
+</md-bottom-sheet>
