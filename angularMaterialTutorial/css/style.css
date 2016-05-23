@@ -1,0 +1,230 @@
+.frameContainer md-whiteframe {
+	background: #fff;
+	/*height: 100px;*/
+}
+md-whiteframe {
+	overflow: auto;
+	min-height: 113px;
+	height: 155px;
+	margin: 3px!important;
+}
+
+img {
+	width:100%;
+}
+
+/* button */
+
+.buttondemo section {
+	background: #f7f7f7;
+	border-radius: 3px;
+	text-align: center;
+	margin: 1em;
+	position: relative !important;
+	padding-bottom: 10px;
+}
+
+.buttondemo md-content {
+	margin-right: 7px;
+}
+
+.buttondemo section .md-button {
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+.buttondemo .label {
+	position: absolute;
+	bottom: 5px;
+	left: 7px;
+	font-size: 14px;
+	opacity: 0.54;
+}
+
+/* chip.html */
+
+.closeButton {
+	position: relative;
+	height: 24px;
+	width: 24px;
+	line-height: 30px;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.3);
+	border-radius: 50%;
+	border: none;
+	box-shadow: none;
+	padding: 0;
+	margin: 3px;
+	transition: background 0.15s linear;
+	display: block;
+}
+
+/* date picker */
+.datepickerdemo md-content {
+	padding-bottom: 200px;
+}
+
+.datepickerdemo .validation-messages {
+	font-size: 11px;
+	color: darkred;
+	margin: 10px 0 0 25px;
+}
+
+/* fab speed dial */
+.fabSpeedDial .text-capitalize {
+	text-transform: capitalize;
+}
+.fabSpeedDial .md-fab:hover, .fabSpeedDialdemoBasicUsage .md-fab.md-focused {
+	background-color: #000 !important;
+}
+.fabSpeedDial p.note {
+	font-size: 1.2rem;
+}
+.fabSpeedDial .lock-size {
+	min-width: 300px;
+	min-height: 300px;
+	width: 300px;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* flex directive */
+.box {
+	color:white;
+	padding:10px;
+	text-align:center;
+	border-style: inset;
+}
+.green {
+	background:green;
+}
+.blue {
+	background:blue;
+}
+
+/* icon */
+.iconDemo .glyph {
+	border-bottom: 1px dotted #ccc;
+	padding: 10px 0 20px;
+	margin-bottom: 20px;
+}
+.iconDemo .preview-glyphs {
+	display: flex;
+	flex-direction: row;
+}
+.iconDemo .step {
+	flex-grow: 1;
+	line-height: 0.5;
+}
+.iconDemo .material-icons.md-18 {
+	font-size: 18px;
+}
+.iconDemo .material-icons.md-24 {
+	font-size: 24px;
+}
+.iconDemo .material-icons.md-36 {
+	font-size: 36px;
+}
+.iconDemo .material-icons.md-48 {
+	font-size: 48px;
+}
+.iconDemo .material-icons.md-dark {
+	color: rgba(0, 0, 0, 0.54);
+}
+.iconDemo .material-icons.md-dark.md-inactive {
+	color: rgba(0, 0, 0, 0.26);
+}
+.iconDemo .material-icons.md-light {
+	color: white;
+}
+.iconDemo .material-icons.md-light.md-inactive {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+/* layout */
+.box {
+	color:white;
+	padding:10px;
+	text-align:center;
+	border-style: inset;
+}
+.green {
+	background:green;
+}
+.blue {
+	background:blue;
+}
+
+/* progress bar */
+.visible {
+	width: 100%;
+	border-width: 5px;
+}
+
+/* swipe */
+.swipeContainer .demo-swipe {
+	padding: 20px 10px;
+}
+.swipeContainer .no-select {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* subheader */
+#subheaderContainer .md-subheader {
+	display: block;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1em;
+	margin: 0;
+	position: relative;
+}
+
+#subheaderContainer md-list {
+	display: block;
+}
+/* virtual repeat html */
+
+.vrepeatContainer #horizontal-container {
+	height: 100px;
+	width: 830px;
+}
+
+.vrepeatContainer #vertical-container {
+	height: 292px;
+	width: 400px;
+}
+
+.vrepeatContainer .repeated-item-horizontal {
+	border-right: 1px solid #ddd;
+	box-sizing: border-box;
+	display: inline-block;
+	height: 84px;
+	padding-top: 35px;
+	text-align: center;
+	width: 50px;
+}
+
+.vrepeatContainer .repeated-item-vertical {
+	border-bottom: 1px solid #ddd;
+	box-sizing: border-box;
+	height: 40px;
+	padding-top: 10px;
+}
+
+.vrepeatContainer md-content {
+	margin: 16px;
+}
+.vrepeatContainer md-virtual-repeat-container {
+	border: solid 1px grey;
+}
+
+/* important */
+md-bottom-sheet {
+	max-height:80% !important;
+}

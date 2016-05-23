@@ -1,5 +1,5 @@
 <md-bottom-sheet class="md-grid" layout="column" ng-cloak>
-	<div ng-controller="contactChipController as ctrl" layout="column" ng-cloak>
+	<div ng-controller="contactChipController as ctrl">
 		<md-content class="md-padding autocomplete" layout="column">
 			<md-contact-chips
 					ng-model="ctrl.contacts"
@@ -13,7 +13,7 @@
 					placeholder="To">
 			</md-contact-chips>
 
-			<md-list class="fixedRows">
+			<md-list class="fixedRows" style="display: block;">
 				<md-subheader class="md-no-sticky">Contacts</md-subheader>
 
 				<md-list-item class="md-2-line contact-item" ng-repeat="(index, contact) in ctrl.allContacts"
