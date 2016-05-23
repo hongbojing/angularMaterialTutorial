@@ -1,10 +1,10 @@
 <md-bottom-sheet class="md-grid" layout="column" ng-cloak>
-	<md-button class="md-primary md-raised" ng-click="showCustom($event)"  flex="100"  flex-gt-md="auto">
-		Show code pic
-	</md-button>
+
 	<div id="sliderContainer" ng-controller="sliderController as ctrl" layout="row" ng-cloak>
 		<md-content style="margin: 16px; padding:16px">
-
+			<md-button class="md-primary md-raised" ng-click="showCustom($event)"  flex="100"  flex-gt-md="auto">
+				Show code pic
+			</md-button>
 			<div layout>
 				<h4 style="margin-top:10px">Default</h4>
 				<md-slider flex min="0" max="255" ng-model="color.red" aria-label="red" id="red-slider" class></md-slider>

@@ -41,6 +41,15 @@ img {
 	opacity: 0.54;
 }
 
+/* contact chip */
+md-chip-template img {
+	width: inherit;
+}
+
+.md-contact-suggestion img {
+	width: inherit;
+}
+
 /* chip.html */
 
 .closeButton {
@@ -226,5 +235,6 @@ img {
 
 /* important */
 md-bottom-sheet {
+	overflow: auto;
 	max-height:80% !important;
 }

@@ -1,9 +1,13 @@
 <md-bottom-sheet class="md-grid" layout="column" ng-cloak>
-	<md-button class="md-primary md-raised" ng-click="showCustom($event)"  flex="100"  flex-gt-md="auto">
-		Show code pic
-	</md-button>
+
 	<div ng-controller="contactChipController as ctrl">
+		<md-content>
+			<md-button class="md-primary md-raised" ng-click="showCustom($event)"  flex="100"  flex-gt-md="auto">
+				Show code pic
+			</md-button>
+		</md-content>
 		<md-content class="md-padding autocomplete" layout="column">
+
 			<md-contact-chips
 					ng-model="ctrl.contacts"
 					md-contacts="ctrl.querySearch($query)"
@@ -21,7 +25,7 @@
 
 				<md-list-item class="md-2-line contact-item" ng-repeat="(index, contact) in ctrl.allContacts"
 							  ng-if="ctrl.contacts.indexOf(contact) < 0">
-					<img ng-src="{{contact.image}}" class="md-avatar" alt="{{contact.name}}" />
+					<img ng-src="{{contact.image}}" class="md-avatar" alt="{{contact.name}}"/>
 					<div class="md-list-item-text compact">
 						<h3>{{contact.name}}</h3>
 						<p>{{contact.email}}</p>
@@ -30,7 +34,7 @@
 				</md-list-item>
 
 				<md-list-item class="md-2-line contact-item selected" ng-repeat="(index, contact) in ctrl.contacts">
-					<img ng-src="{{contact.image}}" class="md-avatar" alt="{{contact.name}}" />
+					<img ng-src="{{contact.image}}" class="md-avatar" alt="{{contact.name}}"/>
 					<div class="md-list-item-text compact">
 						<h3>{{contact.name}}</h3>
 						<p>{{contact.email}}</p>

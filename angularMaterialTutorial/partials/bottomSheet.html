@@ -1,9 +1,10 @@
 <md-bottom-sheet class="md-grid" layout="column" ng-cloak>
-	<md-button class="md-primary md-raised" ng-click="showCustom($event)"  flex="100"  flex-gt-md="auto">
-		Show code pic
-	</md-button>
+
 	<div ng-controller="bottomSheetController as ctrl" layout="column">
 		<md-content class="md-padding">
+			<md-button class="md-primary md-raised" ng-click="showCustom($event)"  flex="100"  flex-gt-md="auto">
+				Show code pic
+			</md-button>
 			<form ng-submit="$event.preventDefault()">
 				<md-button class="md-raised md-primary" ng-click="openBottomSheet()">
 					Open Bottom Sheet!

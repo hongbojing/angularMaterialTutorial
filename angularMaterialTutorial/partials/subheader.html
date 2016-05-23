@@ -1,7 +1,5 @@
 <md-bottom-sheet class="md-grid" layout="column" ng-cloak>
-	<md-button class="md-primary md-raised" ng-click="showCustom($event)"  flex="100"  flex-gt-md="auto">
-		Show code pic
-	</md-button>
+
 	<div id="subheaderContainer" ng-controller="subheaderController as ctrl" layout="column" flex layout-fill ng-cloak>
 
 		<md-toolbar md-scroll-shrink>
@@ -9,7 +7,9 @@
 		</md-toolbar>
 
 		<md-content style="height: 600px;">
-
+			<md-button class="md-primary md-raised" ng-click="showCustom($event)"  flex="100"  flex-gt-md="auto">
+				Show code pic
+			</md-button>
 			<section>
 				<md-subheader class="md-primary">Fruits</md-subheader>
 				<md-list layout-padding>

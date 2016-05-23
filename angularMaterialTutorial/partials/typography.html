@@ -1,10 +1,12 @@
 <md-bottom-sheet class="md-grid" layout="column"
 				 layout-padding layout-wrap layout-fill ng-cloak>
-	<md-button class="md-primary md-raised" ng-click="showCustom($event)"  flex="100"  flex-gt-md="auto">
-		Show code pic
-	</md-button>
-	<div class="frameContainer" ng-controller="typographyController as ctrl" style="padding-bottom: 32px;" ng-cloak>
 
+	<div class="frameContainer" ng-controller="typographyController as ctrl" style="padding-bottom: 32px;" ng-cloak>
+		<md-content>
+			<md-button class="md-primary md-raised" ng-click="showCustom($event)"  flex="100"  flex-gt-md="auto">
+				Show code pic
+			</md-button>
+		</md-content>
 		<p class="md-display-4">.md-display-4</p>
 
 		<p class="md-display-3">.md-display-3</p>

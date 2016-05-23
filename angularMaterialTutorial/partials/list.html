@@ -1,10 +1,10 @@
 <md-bottom-sheet class="md-grid" layout="column" ng-cloak>
-	<md-button class="md-primary md-raised" ng-click="showCustom($event)"  flex="100"  flex-gt-md="auto">
-		Show code pic
-	</md-button>
+
 	<div id="listContainer" ng-controller="listController as ctrl" layout="column" ng-cloak>
 		<md-content>
-
+			<md-button class="md-primary md-raised" ng-click="showCustom($event)"  flex="100"  flex-gt-md="auto">
+				Show code pic
+			</md-button>
 			<md-list style="display: block;">
 				<md-subheader class="md-no-sticky">Contacts</md-subheader>
 				<md-list-item class="md-2-line contact-item" ng-repeat="(index, contact) in ctrl.allContacts"

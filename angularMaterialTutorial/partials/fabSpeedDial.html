@@ -1,9 +1,10 @@
 <md-bottom-sheet class="md-grid" layout="column" ng-cloak>
-	<md-button class="md-primary md-raised" ng-click="showCustom($event)"  flex="100"  flex-gt-md="auto">
-		Show code pic
-	</md-button>
+
 	<div class="fabSpeedDial" id="speedDialContainer" ng-controller="fabSpeedDialController as ctrl" layout="row" ng-cloak>
 		<md-content>
+			<md-button class="md-primary md-raised" ng-click="showCustom($event)"  flex="100"  flex-gt-md="auto">
+				Show code pic
+			</md-button>
 			<div class="lock-size" layout="row" layout-align="center center">
 				<md-fab-speed-dial md-open="ctrl.isOpen" md-direction="{{ctrl.selectedDirection}}"
 								   ng-class="ctrl.selectedMode">

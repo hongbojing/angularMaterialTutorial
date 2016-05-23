@@ -1,8 +1,9 @@
 <md-bottom-sheet class="md-grid" layout="column" ng-cloak>
-	<md-button class="md-primary md-raised" ng-click="showCustom($event)"  flex="100"  flex-gt-md="auto">
-		Show code pic
-	</md-button>
+
 	<div id="toolbarContainer" ng-controller="fabToolbarController as ctrl" ng-cloak>
+		<md-button class="md-primary md-raised" ng-click="showCustom($event)"  flex="100"  flex-gt-md="auto">
+			Show code pic
+		</md-button>
 		<md-fab-toolbar md-open="ctrl.isOpen" md-direction="{{ctrl.selectedDirection}}"
 						count="ctrl.count">
 
@@ -28,6 +29,7 @@
 		</md-fab-toolbar>
 
 		<md-content class="md-padding" layout="column">
+
 			<div layout="row" layout-align="space-around">
 				<div layout="column">
 					<b>Open/Closed</b>
