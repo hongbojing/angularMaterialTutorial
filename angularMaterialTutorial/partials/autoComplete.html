@@ -1,5 +1,8 @@
 <md-bottom-sheet class="md-grid" ng-controller="autoCompleteController as ctrl" layout="column" ng-cloak>
    <md-content class="md-padding">
+      <md-button class="md-primary md-raised" ng-click="showCustom($event)"  flex="100"  flex-gt-md="auto">
+         Show code pic
+      </md-button>
       <form ng-submit="$event.preventDefault()">
          <p><code>md-autocomplete</code> can be used to provide search results from local or remote data sources.</p>
          <md-autocomplete

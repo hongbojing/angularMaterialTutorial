@@ -9,10 +9,10 @@
         .controller('listController', listController);
 
     /* dependency injection to ensure valid minified code */
-    listController.$inject = ['$scope'];
+    listController.$inject = ['$scope', '$mdDialog'];
 
     //function
-    function listController ($scope) {
+    function listController ($scope, $mdDialog) {
         var self = this;
         self.allContacts = loadContacts();
         self.contacts = [self.allContacts[0]];
@@ -35,6 +35,24 @@
                 return contact;
             });
         }
+
+        $scope.showCustom = function(event) {
+            $mdDialog.show({
+                clickOutsideToClose: true,
+                scope: $scope,
+                preserveScope: true,
+                template: '<md-dialog>' +
+                '  <md-dialog-content>' +
+                '<img src="../img/codePic/21list.png">' +
+                '  </md-dialog-content>' +
+                '</md-dialog>',
+                controller: function DialogController($scope, $mdDialog) {
+                    $scope.closeDialog = function() {
+                        $mdDialog.hide();
+                    }
+                }
+            });
+        };
     }
 
 })();

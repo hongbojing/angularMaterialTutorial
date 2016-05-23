@@ -1,5 +1,7 @@
 <md-bottom-sheet class="md-grid" layout="column" ng-cloak>
-
+	<md-button class="md-primary md-raised" ng-click="showCustom($event)"  flex="100"  flex-gt-md="auto">
+		Show code pic
+	</md-button>
 	<div id="radioButtonsContainer" ng-controller="radioButtonController as ctrl" layout="column" ng-cloak>
 		<p>Selected Value: <span>{{ group }}</span> </p>
 

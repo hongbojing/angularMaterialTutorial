@@ -9,10 +9,10 @@
         .controller('chipController', chipController);
 
     /* dependency injection to ensure valid minified code */
-    chipController.$inject = ['$scope'];
+    chipController.$inject = ['$scope', '$mdDialog'];
 
     //function
-    function chipController ($scope) {
+    function chipController ($scope, $mdDialog) {
         var self = this;
         self.readonly = false;
         // Lists of fruit names and Vegetable objects
@@ -38,6 +38,24 @@
                 name: chip,
                 type: 'unknown'
             };
+        };
+
+        $scope.showCustom = function(event) {
+            $mdDialog.show({
+                clickOutsideToClose: true,
+                scope: $scope,
+                preserveScope: true,
+                template: '<md-dialog>' +
+                '  <md-dialog-content>' +
+                '<img src="../img/codePic/8chip.png">' +
+                '  </md-dialog-content>' +
+                '</md-dialog>',
+                controller: function DialogController($scope, $mdDialog) {
+                    $scope.closeDialog = function() {
+                        $mdDialog.hide();
+                    }
+                }
+            });
         };
     }
 

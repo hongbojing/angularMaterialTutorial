@@ -9,10 +9,10 @@
         .controller('contactChipController', contactChipController);
 
     /* dependency injection to ensure valid minified code */
-    contactChipController.$inject = ['$scope'];
+    contactChipController.$inject = ['$scope', '$mdDialog'];
 
     //function
-    function contactChipController ($scope) {
+    function contactChipController ($scope, $mdDialog) {
         var self = this;
         self.querySearch = querySearch;
         self.allContacts = loadContacts();
@@ -50,6 +50,24 @@
                 return contact;
             });
         }
+
+        $scope.showCustom = function(event) {
+            $mdDialog.show({
+                clickOutsideToClose: true,
+                scope: $scope,
+                preserveScope: true,
+                template: '<md-dialog>' +
+                '  <md-dialog-content>' +
+                '<img src="../img/codePic/9contactChip.png">' +
+                '  </md-dialog-content>' +
+                '</md-dialog>',
+                controller: function DialogController($scope, $mdDialog) {
+                    $scope.closeDialog = function() {
+                        $mdDialog.hide();
+                    }
+                }
+            });
+        };
     }
 
 })();

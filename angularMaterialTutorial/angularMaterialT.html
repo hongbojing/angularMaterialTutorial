@@ -57,11 +57,11 @@
 	<md-whiteframe class="md-whiteframe-1dp"
 				   flex-sm="45" flex-gt-sm="30" flex-gt-md="10"
 				   layout layout-align="center center"
-				   ng-repeat="tils in COLORS">
-		<a href="#" ng-click="openBottomSheet(tils.templateUrlValue)">
-			<img ng-src="../img/{{tils.imgName}}.png" alt="xx">
+				   ng-repeat="tile in tiles">
+		<a href="#" ng-click="openBottomSheet(tile.templateUrlValue)">
+			<img ng-src="../img/{{tile.imgName}}.png" alt="xx">
 		</a>
-		<md-tooltip md-visible="false" md-direction="bottom">{{tils.tooltipsValue}} !</md-tooltip>
+		<md-tooltip md-visible="false" md-direction="bottom">{{tile.tooltipsValue}} !</md-tooltip>
 	</md-whiteframe>
 
 </div>

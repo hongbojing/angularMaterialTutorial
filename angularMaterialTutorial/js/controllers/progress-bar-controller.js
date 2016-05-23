@@ -9,10 +9,10 @@
         .controller('progressBarController', progressBarController);
 
     /* dependency injection to ensure valid minified code */
-    progressBarController.$inject = ['$scope', '$interval'];
+    progressBarController.$inject = ['$scope', '$interval', '$mdDialog'];
 
     //function
-    function progressBarController ($scope, $interval) {
+    function progressBarController ($scope, $interval, $mdDialog) {
         var self = this,  j= 0, counter = 0;
         self.modes = [ ];
         self.activated = true;
@@ -32,6 +32,24 @@
             }
             if ( counter++ % 4 == 0 ) j++;
         }, 100, 0, true);
+
+        $scope.showCustom = function(event) {
+            $mdDialog.show({
+                clickOutsideToClose: true,
+                scope: $scope,
+                preserveScope: true,
+                template: '<md-dialog>' +
+                '  <md-dialog-content>' +
+                '<img src="../img/codePic/24progressBar.png">' +
+                '  </md-dialog-content>' +
+                '</md-dialog>',
+                controller: function DialogController($scope, $mdDialog) {
+                    $scope.closeDialog = function() {
+                        $mdDialog.hide();
+                    }
+                }
+            });
+        };
     }
 
 })();

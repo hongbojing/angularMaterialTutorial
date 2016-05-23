@@ -9,10 +9,10 @@
         .controller('progressLinerController', progressLinerController);
 
     /* dependency injection to ensure valid minified code */
-    progressLinerController.$inject = ['$scope', '$interval'];
+    progressLinerController.$inject = ['$scope', '$interval', '$mdDialog'];
 
     //function
-    function progressLinerController ($scope, $interval) {
+    function progressLinerController ($scope, $interval, $mdDialog) {
         var self = this,  j= 0, counter = 0;
         self.modes = [ ];
         self.activated = true;
@@ -32,6 +32,24 @@
             }
             if ( counter++ % 4 == 0 ) j++;
         }, 100, 0, true);
+
+        $scope.showCustom = function(event) {
+            $mdDialog.show({
+                clickOutsideToClose: true,
+                scope: $scope,
+                preserveScope: true,
+                template: '<md-dialog>' +
+                '  <md-dialog-content>' +
+                '<img src="../img/codePic/25progressLiner.png">' +
+                '  </md-dialog-content>' +
+                '</md-dialog>',
+                controller: function DialogController($scope, $mdDialog) {
+                    $scope.closeDialog = function() {
+                        $mdDialog.hide();
+                    }
+                }
+            });
+        };
     }
 
 })();

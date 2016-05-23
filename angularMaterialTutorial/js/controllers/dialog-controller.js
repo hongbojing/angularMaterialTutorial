@@ -15,6 +15,25 @@
     function dialogController ($scope, $mdDialog) {
         $scope.status = '';
         $scope.items = [1,2,3,4,5];
+
+        $scope.showCodePic = function(event) {
+            $mdDialog.show({
+                clickOutsideToClose: true,
+                scope: $scope,
+                preserveScope: true,
+                template: '<md-dialog>' +
+                '  <md-dialog-content>' +
+                '<img src="../img/codePic/12dialog.png">' +
+                '  </md-dialog-content>' +
+                '</md-dialog>',
+                controller: function DialogController($scope, $mdDialog) {
+                    $scope.closeDialog = function() {
+                        $mdDialog.hide();
+                    }
+                }
+            });
+        };
+
         $scope.showAlert = function(ev) {
             $mdDialog.show(
                 $mdDialog.alert()

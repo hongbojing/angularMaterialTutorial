@@ -9,13 +9,31 @@
         .controller('dividerController', dividerController);
 
     /* dependency injection to ensure valid minified code */
-    dividerController.$inject = ['$scope'];
+    dividerController.$inject = ['$scope', '$mdDialog'];
 
     //function
-    function dividerController ($scope) {
+    function dividerController ($scope, $mdDialog) {
         var self = this;
         self.allContacts = loadContacts();
         self.contacts = [self.allContacts[0]];
+
+        $scope.showCustom = function(event) {
+            $mdDialog.show({
+                clickOutsideToClose: true,
+                scope: $scope,
+                preserveScope: true,
+                template: '<md-dialog>' +
+                '  <md-dialog-content>' +
+                '<img src="../img/codePic/13divider.png">' +
+                '  </md-dialog-content>' +
+                '</md-dialog>',
+                controller: function DialogController($scope, $mdDialog) {
+                    $scope.closeDialog = function() {
+                        $mdDialog.hide();
+                    }
+                }
+            });
+        };
 
         function loadContacts() {
             var contacts = [

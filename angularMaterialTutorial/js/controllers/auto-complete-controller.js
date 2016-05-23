@@ -9,9 +9,9 @@
         .controller('autoCompleteController', autoCompleteController);
 
     /* dependency injection to ensure valid minified code */
-    autoCompleteController.$inject = ['$timeout', '$q', '$log'];
+    autoCompleteController.$inject = ['$timeout', '$scope', '$mdDialog', '$q', '$log'];
 
-    function autoCompleteController ($timeout, $q, $log) {
+    function autoCompleteController ($timeout, $scope, $mdDialog, $q, $log) {
         var self = this;
         self.simulateQuery = false;
         self.isDisabled    = false;
@@ -21,6 +21,25 @@
         self.selectedItemChange = selectedItemChange;
         self.searchTextChange   = searchTextChange;
         self.newState = newState;
+
+        $scope.showCustom = function(event) {
+            $mdDialog.show({
+                clickOutsideToClose: true,
+                scope: $scope,
+                preserveScope: true,
+                template: '<md-dialog>' +
+                '  <md-dialog-content>' +
+                '<img src="../img/codePic/1autoComplete.png">' +
+                '  </md-dialog-content>' +
+                '</md-dialog>',
+                controller: function DialogController($scope, $mdDialog) {
+                    $scope.closeDialog = function() {
+                        $mdDialog.hide();
+                    }
+                }
+            });
+        };
+
         function newState(state) {
             alert("This functionality is yet to be implemented!");
         }

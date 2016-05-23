@@ -1,4 +1,7 @@
 <md-bottom-sheet class="md-grid" layout="column" ng-cloak>
+	<md-button class="md-primary md-raised" ng-click="showCustom($event)"  flex="100"  flex-gt-md="auto">
+		Show code pic
+	</md-button>
 	<div id="switchContainer" ng-controller="switchController as ctrl" layout="column" ng-cloak>
 
 		<md-switch ng-model="data.switch1" aria-label="Switch 1">

@@ -9,11 +9,29 @@
         .controller('testController', testController);
 
     /* dependency injection to ensure valid minified code */
-    testController.$inject = ['$scope'];
+    testController.$inject = ['$scope', '$mdDialog'];
 
     //function
-    function testController($scope){
+    function testController($scope, $mdDialog){
         $scope.test = 'hello world';
+
+        $scope.showCustom = function(event) {
+            $mdDialog.show({
+                clickOutsideToClose: true,
+                scope: $scope,
+                preserveScope: true,
+                template: '<md-dialog>' +
+                '  <md-dialog-content>' +
+                '<img src="../img/0test.png">' +
+                '  </md-dialog-content>' +
+                '</md-dialog>',
+                controller: function DialogController($scope, $mdDialog) {
+                    $scope.closeDialog = function() {
+                        $mdDialog.hide();
+                    }
+                }
+            });
+        };
     }
 })();
 

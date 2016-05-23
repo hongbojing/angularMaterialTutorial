@@ -2,10 +2,86 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2271265-9990-4201-b206-6c06578f5c8e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/0test.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/main-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/angularMaterialT.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/angularMaterialT.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/auto-complete-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/auto-complete-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/bottom-sheet-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/bottom-sheet-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/button-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/button-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/card-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/card-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/check-box-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/check-box-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/chip-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/chip-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/contact-chip-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/contact-chip-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/content-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/content-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/date-picker-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/date-picker-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/dialog-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/dialog-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/divider-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/divider-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/fab-speed-dial-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/fab-speed-dial-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/fab-toolbar-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/fab-toolbar-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/flex-directive-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/flex-directive-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/grid-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/grid-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/icon-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/icon-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/input-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/input-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/layout-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/layout-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/list-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/list-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/menu-bar-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/menu-bar-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/menu-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/menu-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/progress-bar-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/progress-bar-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/progress-liner-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/progress-liner-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/radio-button-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/radio-button-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/select-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/select-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/sidenav-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/sidenav-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/slider-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/slider-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/subheader-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/subheader-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/swipe-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/swipe-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/switch-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/switch-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/tab-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/tab-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/test-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/test-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/theme-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/theme-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/toast-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/toast-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/toolbar-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/toolbar-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/tooltip-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/tooltip-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/typography-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/typography-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/virtual-repeat-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/virtual-repeat-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/white-frame-controller.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/white-frame-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/js/index.js" afterPath="$PROJECT_DIR$/angularMaterialTutorial/js/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/autoComplete.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/autoComplete.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/bottomSheet.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/bottomSheet.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/button.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/button.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/card.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/card.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/checkBox.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/checkBox.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/chip.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/chip.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/contactChip.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/contactChip.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/content.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/content.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/datePicker.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/datePicker.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/dialog.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/dialog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/divider.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/divider.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/fabSpeedDial.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/fabSpeedDial.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/fabToolbar.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/fabToolbar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/flexDirective.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/flexDirective.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/grid.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/grid.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/icon.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/icon.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/input.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/input.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/layout.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/layout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/list.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/menu.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/menu.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/menuBar.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/menuBar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/progressBar.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/progressBar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/progressLiner.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/progressLiner.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/radioButton.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/radioButton.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/select.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/select.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/sidenav.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/sidenav.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/slider.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/slider.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/subheader.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/subheader.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/swipe.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/swipe.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/switch.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/switch.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/tab.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/tab.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/test.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/theme.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/theme.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/toast.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/toast.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/toolbar.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/toolbar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/tooltip.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/tooltip.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/typography.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/typography.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/virtualRepeat.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/virtualRepeat.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularMaterialTutorial/partials/whiteFrame.html" afterPath="$PROJECT_DIR$/angularMaterialTutorial/partials/whiteFrame.html" />
     </list>
     <ignored path="angularMaterialTutorial.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,31 +102,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="toast-controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/toast-controller.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+              <caret line="42" column="49" selection-start-line="42" selection-start-column="49" selection-end-line="42" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="angularMaterialT.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/angularMaterialT.html">
+      <file leaf-file-name="toolbar-controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/toolbar-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.9411764">
-              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="45" column="51" selection-start-line="45" selection-start-column="51" selection-end-line="45" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/index.js">
+      <file leaf-file-name="tooltip-controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/tooltip-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.14376996">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="typography-controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/typography-controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="24" column="54" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="virtual-repeat-controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/virtual-repeat-controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="white-frame-controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/white-frame-controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="25" column="54" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chip-controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/chip-controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="49" column="47" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact-chip-controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/contact-chip-controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="60" column="43" selection-start-line="60" selection-start-column="43" selection-end-line="60" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dialog-controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/dialog-controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-2.8888888">
+              <caret line="18" column="26" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dialog.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/partials/dialog.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.015625">
+              <caret line="1" column="65" selection-start-line="1" selection-start-column="65" selection-end-line="1" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -64,9 +210,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/angularMaterialTutorial/angularMaterialT.html" />
-        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/index.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/partials/sidenav.html" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/partials/slider.html" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/partials/subheader.html" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/partials/swipe.html" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/partials/switch.html" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/partials/tab.html" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/partials/theme.html" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/partials/toast.html" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/partials/toolbar.html" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/partials/tooltip.html" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/partials/typography.html" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/partials/virtualRepeat.html" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/partials/whiteFrame.html" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/bottom-sheet-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/button-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/card-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/check-box-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/chip-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/content-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/date-picker-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/divider-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/fab-speed-dial-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/fab-toolbar-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/flex-directive-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/grid-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/icon-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/input-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/layout-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/list-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/menu-bar-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/menu-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/progress-bar-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/progress-liner-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/radio-button-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/select-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/sidenav-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/slider-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/subheader-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/swipe-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/switch-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/tab-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/theme-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/toast-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/toolbar-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/tooltip-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/typography-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/virtual-repeat-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/white-frame-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/contact-chip-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/js/controllers/dialog-controller.js" />
+        <option value="$PROJECT_DIR$/angularMaterialTutorial/partials/dialog.html" />
       </list>
     </option>
   </component>
@@ -76,9 +270,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
     <option name="width" value="1920" />
-    <option name="height" value="1057" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -124,6 +317,78 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angularMaterialTutorial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angularMaterialTutorial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angularMaterialTutorial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angularMaterialTutorial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angularMaterialTutorial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angularMaterialTutorial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angularMaterialTutorial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angularMaterialTutorial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angularMaterialTutorial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angularMaterialTutorial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angularMaterialTutorial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="angularMaterialTutorial" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -136,6 +401,7 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -202,26 +468,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1057" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25239617" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20500532" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -232,39 +498,410 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/partials/swipe.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.875">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/partials/whiteFrame.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.046875">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/partials/virtualRepeat.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.046875">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/partials/typography.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0625">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/partials/tooltip.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.046875">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/partials/toolbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.046875">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/partials/toast.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.046875">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/partials/theme.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.046875">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/partials/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.125">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="10" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/partials/tab.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.046875">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/partials/switch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.046875">
+          <caret line="3" column="16" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/auto-complete-controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/angularMaterialT.html">
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/bottom-sheet-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.9411764">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="54" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/originalFiles/1autocomplete.html">
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/card-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24590164">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state vertical-scroll-proportion="-13.333333">
+          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/0test.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/check-box-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/index.js">
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/button-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14376996">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state vertical-scroll-proportion="-15.0">
+          <caret line="27" column="49" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/content-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="51" selection-start-line="24" selection-start-column="51" selection-end-line="24" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/date-picker-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="54" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/divider-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="51" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/fab-speed-dial-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="56" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/fab-toolbar-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="54" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/flex-directive-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="57" selection-start-line="24" selection-start-column="57" selection-end-line="24" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/grid-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="48" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/icon-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/input-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="49" selection-start-line="26" selection-start-column="49" selection-end-line="26" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/layout-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/menu-bar-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="51" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/list-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="48" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/menu-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/progress-bar-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="55" selection-start-line="42" selection-start-column="55" selection-end-line="42" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/progress-liner-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="57" selection-start-line="42" selection-start-column="57" selection-end-line="42" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/radio-button-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="55" selection-start-line="30" selection-start-column="55" selection-end-line="30" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/select-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="50" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/sidenav-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/slider-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/subheader-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="53" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/swipe-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="49" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/switch-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="50" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/tab-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/test-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/theme-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="49" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/toast-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="49" selection-start-line="42" selection-start-column="49" selection-end-line="42" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/toolbar-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="51" selection-start-line="45" selection-start-column="51" selection-end-line="45" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/tooltip-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/typography-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="54" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/virtual-repeat-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/white-frame-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="54" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/chip-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="49" column="47" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/contact-chip-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="60" column="43" selection-start-line="60" selection-start-column="43" selection-end-line="60" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/js/controllers/dialog-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.8888888">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularMaterialTutorial/partials/dialog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.015625">
+          <caret line="1" column="65" selection-start-line="1" selection-start-column="65" selection-end-line="1" selection-end-column="65" />
           <folding />
         </state>
       </provider>

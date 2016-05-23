@@ -9,7 +9,7 @@ angular
 mainController.$inject = ['$scope', '$mdBottomSheet'];
 
 function mainController ($scope, $mdBottomSheet) {
-    $scope.COLORS = [
+    $scope.tiles = [
         {imgName: '0test', templateUrlValue: 'test', tooltipsValue: 'For testing'},
         {imgName: '1autocomplete', templateUrlValue: 'autoComplete', tooltipsValue: 'Autocomplete'},
         {imgName: '2bottomSheet', templateUrlValue: 'bottomSheet', tooltipsValue: 'Bottom Sheet'},
@@ -54,7 +54,8 @@ function mainController ($scope, $mdBottomSheet) {
     $scope.openBottomSheet = function(inputTemplateUrlValue) {
         $mdBottomSheet.show({
             templateUrl: 'partials/' + inputTemplateUrlValue + '.html',
-            controller: inputTemplateUrlValue + 'Controller'
+            controller: inputTemplateUrlValue + 'Controller',
+            clickOutsideToClose: false
         });
     };
 }
