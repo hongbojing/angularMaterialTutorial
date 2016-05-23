@@ -10,7 +10,7 @@ mainController.$inject = ['$scope', '$mdBottomSheet'];
 
 function mainController ($scope, $mdBottomSheet) {
     $scope.COLORS = [
-        {imgName: '1autocomplete', templateUrlValue: 'test', tooltipsValue: 'Autocomplete'},
+        {imgName: '0test', templateUrlValue: 'test', tooltipsValue: 'For testing'},
         {imgName: '1autocomplete', templateUrlValue: 'autoComplete', tooltipsValue: 'Autocomplete'},
         {imgName: '2bottomSheet', templateUrlValue: 'bottomSheet', tooltipsValue: 'Bottom Sheet'},
         {imgName: '3button', templateUrlValue: 'button', tooltipsValue: 'Button'},
