@@ -59,14 +59,12 @@
 				   layout layout-align="center center"
 				   ng-repeat="tile in tiles">
 		<a href="#" ng-click="openBottomSheet(tile.templateUrlValue)">
-			<img ng-src="../img/{{tile.imgName}}.png" alt="xx">
+			<img ng-src="img/{{tile.imgName}}.png" alt="xx">
 		</a>
 		<md-tooltip md-visible="false" md-direction="bottom">{{tile.tooltipsValue}} !</md-tooltip>
 	</md-whiteframe>
 
 </div>
-
-
 
 </body>
 </html>
